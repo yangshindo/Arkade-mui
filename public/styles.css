@@ -1,0 +1,20 @@
+body {
+background-image: url('https://i.imgur.com/fcDFEEC.jpg');
+background-size: cover;
+}
+
+.hero-h1-1 {
+  font-family: 'Black Ops One', cursive;
+  color: whitesmoke;
+  font-size: 800%;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.hero-h1-2 {
+    font-family: 'Black Ops One', cursive;
+    color: whitesmoke;
+    font-size: 800%;
+    text-align: right;
+    padding-right: 2%;
+}
