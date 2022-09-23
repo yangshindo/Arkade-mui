@@ -130,7 +130,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="chibi_avatar" src="https://i.imgur.com/lgKOK2Z.png" sx={{ width: 56, height: 56, bgcolor: '#787A91' }}/>
+                <Avatar alt="avatar" src="https://i.imgur.com/TdgvUMu.jpg" sx={{ width: 56, height: 56, bgcolor: '#787A91' }}/>
               </IconButton>
             </Tooltip>
             <Menu
