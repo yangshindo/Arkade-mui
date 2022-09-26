@@ -17,6 +17,7 @@ background-size: cover;
     font-size: 800%;
     text-align: right;
     padding-right: 2%;
+    margin-top: -4%;
 }
 
 .expand-more-icon {
@@ -26,7 +27,38 @@ background-size: cover;
 }
 
 .hero-letsrock {
-  margin-top: -16%;
+  margin-top: -10%;
   width: 30%;
   transform: rotate(340deg)
+}
+
+
+.carousel-round-img {
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-bottom: 3%;
+  width: 95%;
+  
+}
+
+.carousel-side-text {
+  font-family: 'Alfa Slab One', cursive;
+  border: auto;
+  padding-top: 15%;
+  align-content: center;
+  text-align: center;
+  color: aliceblue;
+  font-size: larger;
+}
+
+.products-carousel-div{
+  padding-top: 5%;
+  align-content: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carousel-product-img {
+  width: 40%;
 }
