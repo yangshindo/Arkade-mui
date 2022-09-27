@@ -1,40 +1,44 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 function ProductsCarousel(props)
 {
-    var items = [
-        {
-            image: "https://i.imgur.com/50XSuJf.png[/img]",
-            description: "Probably the most random thing you have ever seen!"
-        },
-        {
-            image: "https://i.imgur.com/QNg91O9.png",
-            description: "Hello World!"
-        },
+    const items = [
+       
         {
             image: "https://i.imgur.com/FbMO3CI.png",
-            description: "Hello World!"
+            description: "FX-A FightStick"
         },
         {
             image: "https://i.imgur.com/hPZtiBa.png",
-            description: "Hello"
+            description: "FX-B FightStick"
         },
         {
             image: "https://i.imgur.com/iHs7A9n.png",
-            description: "Hitbox"
+            description: "HITBOX"
+        },
+        {
+            image: "https://i.imgur.com/QNg91O9.png",
+            description: "Adaptable Lever Model 29B"
         }
     ]
 
     return (
         <div >
         <div className="products-carousel-div">
+            <Paper sx={{backgroundColor: "whitesmoke"}}>
         <Carousel>
+            
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
+           
         </Carousel>
+        <br />
+        </Paper>
+ 
         </div>
         </div>
     )
@@ -43,14 +47,14 @@ function ProductsCarousel(props)
 function Item(props)
 {
     return (
-        <Paper>
-            <img className='carousel-product-img' src={props.item.image} />
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">
-                Check it out!
+        <div>
+            <img className='product-img' src={props.item.image} />
+            <p className="product-text">{props.item.description}</p>
+           
+            <Button sx={{color: "black", borderColor: "black"}} variant="outlined" className="shopping-cart-button">
+            <AddShoppingCartIcon /> Add to Shopping Cart
             </Button>
-        </Paper>
+        </div>
     )
 }
 
