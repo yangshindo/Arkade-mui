@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import { Paper, Button, Slide } from '@mui/material'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 function ProductsCarousel(props)
@@ -37,9 +37,11 @@ function ProductsCarousel(props)
            
         </Carousel>
         <br />
-        </Paper>
- 
+        </Paper> <Slide direction='left' in="true" timeout={2650}><img src="https://i.imgur.com/5370P4I.png" alt="ino" className="ino-img"/></Slide>
+        
         </div>
+
+        
         </div>
     )
 }
@@ -48,11 +50,10 @@ function Item(props)
 {
     return (
         <div>
-            <img className='product-img' src={props.item.image} />
+            <img className='product-img' src={props.item.image} alt="product-img"/>
             <p className="product-text">{props.item.description}</p>
-           
             <Button sx={{color: "black", borderColor: "black"}} variant="outlined" className="shopping-cart-button">
-            <AddShoppingCartIcon /> Add to Shopping Cart
+            <AddShoppingCartIcon />&nbsp; Add to Shopping Cart
             </Button>
         </div>
     )
