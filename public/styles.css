@@ -11,6 +11,7 @@ font-family: 'Keania One', cursive;
 body {
 background-image: url('https://i.imgur.com/fcDFEEC.jpg');
 background-size: cover;
+overflow-x: hidden;
 }
 
 .hero-text-div {
@@ -20,18 +21,20 @@ background-size: cover;
 
 .hero-h1-1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1000%;
+  font-size: 1100%;
   text-align: left;
   padding-left: 15%;
   color: whitesmoke;
+  overflow:hidden
 }
 
 .hero-h1-2 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1000%;
+  font-size: 1100%;
     text-align: right;
     padding-right: 15%;
     color: whitesmoke;
+    overflow:hidden
 }
 
 .expand-more-icon {
@@ -42,38 +45,47 @@ background-size: cover;
 
 .hero-letsrock {
   position: absolute;
-  top: 10%;
+  top: 7%;
   right: 10%;
   width: 30%;
   transform: rotate(20deg);
   z-index: -999;
+  overflow:hidden
 }
 
 .hero-slash {
   position: absolute;
   bottom: 1%;
-
   width: 30%;
   transform: rotate(-20deg);
   z-index: -999;
+  overflow:hidden
+}
+
+.whoweare-div {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .carousel-round-img {
-  padding-top: 3%;
-  padding-left: 2%;
-  padding-bottom: 3%;
-  width: 95%;
-  
+  width: 100%;
+}
+
+.carousel-title-text {
+  font-family: 'Keania One', cursive;
+  font-size: 360%;
+  text-align: center;
+  color: #ac0e0e;
+  border: dashed;
 }
 
 .carousel-side-text {
   font-family: 'Alfa Slab One', cursive;
   border: auto;
-  padding-top: 15%;
   align-content: center;
   text-align: center;
-  color: aliceblue;
-  font-size: 120%;
+  color: whitesmoke;
+  font-size: 130%;
 }
 
 .products-carousel-div{
@@ -87,16 +99,16 @@ background-size: cover;
 }
 
 .product-img {
-  width: 40%;
+  width: 60%;
 }
 
 .product-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
+  font-size: 200%;
 }
 
 .ino-img {
-  width: 40%;
+  width: 50%;
   position: absolute;
   top: 3%;
   right: -7%;
@@ -110,11 +122,13 @@ background-size: cover;
 }
 
 .tournament-div {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 .tournament-img {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 105%;
   border: ridge;
   box-shadow: 5px 10px #0c0c0c;
@@ -131,4 +145,37 @@ background-size: cover;
 .tournament-h2 {
   font-size: 300%;
   font-family: 'Bebas Neue', cursive;
+}
+
+.accordion-div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer-div {
+  margin-top: 10%;
+  position: relative
+}
+
+.footer-text{
+  font-size: 130%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke
+}
+
+.chibimay-img {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 8%;
+  overflow: hidden;
+}
+
+.speechbubble-img {
+  position: absolute;
+  bottom: 10%;
+  right: 12%;
+  width: 17%;
+  overflow: hidden;
 }
