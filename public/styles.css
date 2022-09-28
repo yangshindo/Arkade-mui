@@ -15,6 +15,7 @@ background-size: cover;
 
 .hero-text-div {
   position: relative;
+  overflow:hidden
 }
 
 .hero-h1-1 {
@@ -109,10 +110,25 @@ background-size: cover;
 }
 
 .tournament-div {
-  padding: 10%;
+  padding: 5%;
 }
 
 .tournament-img {
-  width: 100%;
-  border: solid;
+  margin-top: 10%;
+  width: 105%;
+  border: ridge;
+  box-shadow: 5px 10px #0c0c0c;
+}
+
+.tournament-text {
+  text-shadow: 3px 3px #040404;
+  color: whitesmoke;
+  font-size: 130%;
+  font-family: 'Alfa Slab One';
+  margin-top: -5%;
+}
+
+.tournament-h2 {
+  font-size: 300%;
+  font-family: 'Bebas Neue', cursive;
 }
