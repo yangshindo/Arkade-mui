@@ -1,4 +1,3 @@
-import Slide from "@mui/material/Slide";
 
 function VSScreen() {
   return (

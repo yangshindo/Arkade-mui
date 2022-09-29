@@ -1,8 +1,10 @@
-import { Box, Grid } from "@mui/material/";
+import { Box, Grid, Fade } from "@mui/material/";
+
 
 function Tournament() {
   return (
     <div className="tournament-div">
+      <Fade in={true} timeout={2500}>
       <Box
         sx={{
           border: "solid",
@@ -40,6 +42,7 @@ function Tournament() {
       <br />
       <br />
       <br />
+      </Fade>
     </div>
   );
 }

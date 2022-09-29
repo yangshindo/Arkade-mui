@@ -1,9 +1,21 @@
-import React from "react";
+import { useState } from 'react';
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button, Slide } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 function ProductsCarousel(props) {
+
+   const [visibility, setVisibility] = useState(false)
+
+   function visibilityChange(isVisible) {
+    if (isVisible) {
+        setVisibility(true)
+    }
+   }
+
+
   const items = [
     {
       image: "https://i.imgur.com/FbMO3CI.png",
@@ -24,25 +36,32 @@ function ProductsCarousel(props) {
   ];
 
   return (
+    
     <div>
+       
       <div className="products-carousel-div">
+      
         <Paper sx={{ backgroundColor: "whitesmoke" }}>
+            <VisibilitySensor onChange={visibilityChange} partialVisibility={(true)}>
           <Carousel>
             {items.map((item, i) => (
               <Item key={i} item={item} />
             ))}
           </Carousel>
+          </VisibilitySensor >
           <br />
         </Paper>{" "}
-        <Slide direction="left" in="true" timeout={2650}>
+        {visibility ? <div><Slide direction="left" in={true} timeout={3650}>
           <img
             src="https://i.imgur.com/5370P4I.png"
             alt="ino"
             className="ino-img"
           />
-        </Slide>
+        </Slide></div>  : null}
       </div>
+      
     </div>
+    
   );
 }
 
