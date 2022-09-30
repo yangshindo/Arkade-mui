@@ -1,11 +1,32 @@
-import { Box, Grid, Fade } from "@mui/material/";
-
+import { Box, Grid } from "@mui/material/";
+import { motion } from "framer-motion";
+import VisibilitySensor from 'react-visibility-sensor';
+import { useState } from 'react';
 
 function Tournament() {
+
+  const [visibility, setVisibility] = useState(false)
+
+   function visibilityChange(isVisible) {
+    if (isVisible) {
+        setVisibility(true)
+    }
+   }
+
   return (
+    <VisibilitySensor onChange={visibilityChange}>
     <div className="tournament-div">
-      <Fade in={true} timeout={2500}>
-      <Box
+       {visibility ? <TournamentRender /> : null}
+    </div>
+    </VisibilitySensor>
+  );
+}
+
+function TournamentRender() {
+  return (
+    <div>
+    <motion.div animate={{scale: 1}} initial={{scale: 0.5}} transition={{type: "tween", duration: 1.7}}>
+<Box
         sx={{
           border: "solid",
           borderRadius: "8%",
@@ -39,12 +60,9 @@ function Tournament() {
           </Grid>
         </Grid>
       </Box>
-      <br />
-      <br />
-      <br />
-      </Fade>
-    </div>
-  );
+      </motion.div>
+      </div>)
 }
+
 
 export default Tournament;

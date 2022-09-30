@@ -6,7 +6,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function AccordionTips() {
   return (
+
     <div className="accordion-div">
+          <br />
+    <br />
+    <br />
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

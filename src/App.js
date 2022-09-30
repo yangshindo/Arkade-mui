@@ -10,6 +10,7 @@ import VSScreen from "./VSScreen";
 function App() {
   return (
     <div>
+      
       <Navbar />
       <HeroText />
       <WhoWeAre />
