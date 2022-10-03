@@ -25,7 +25,7 @@ function Tournament() {
 function TournamentRender() {
   return (
     <div>
-    <motion.div animate={{scale: 1}} initial={{scale: 0.5}} transition={{type: "tween", duration: 1.7}}>
+    <motion.div animate={{scale: 1}} initial={{scale: 0.5}} transition={{type: "tween", duration: 3.3}}>
 <Box
         sx={{
           border: "solid",

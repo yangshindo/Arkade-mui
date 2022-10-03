@@ -1,16 +1,28 @@
 import Carousel from "react-material-ui-carousel";
 import Grid from "@mui/material/Grid";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import VisibilitySensor from 'react-visibility-sensor';
 
-//MAKE FOREGROUND MOVE FASTER THAN BACKGROUND
 
 function WhoWeAre() {
+
+  const [visibility, setVisibility] = useState(false)
+
+   function visibilityChange(isVisible) {
+    if (isVisible) {
+        setVisibility(true)
+    }
+   }
+
   return (
     <div className="whoweare-div">
       <br />
       <br />
       <br />
-      <Grid container spacing={1}>
-        <Grid item xs={6}>
+      <Grid container spacing={2}>
+        <VisibilitySensor onChange={visibilityChange}>
+        <Grid item xs={7}>
           <Carousel
             interval={4000}
             indicators={false}
@@ -28,8 +40,14 @@ function WhoWeAre() {
             ></img>
           </Carousel>
         </Grid>
-        <Grid item xs={6}>
+        </VisibilitySensor>
+        <Grid item xs={5}>
+          <br />
+          <br />
+          {visibility ? <motion.div animate={{scale: 1}} initial={{scale: 2}} transition={{type: "tween", duration: 0.4}}>
           <p className="carousel-title-text">THE BEST FIGHT EVER!</p>
+          </motion.div> : <div><br /><br /><br /> <br /> <br /><br /><br /><br /> <br /> <br /></div>}
+        
           <p className="carousel-side-text">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

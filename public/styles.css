@@ -79,7 +79,7 @@ background-size: cover;
 
 .carousel-title-text {
   font-family: 'Keania One', cursive;
-  font-size: 360%;
+  font-size: 260%;
   text-align: center;
   color: #ac0e0e;
   border: dashed;
@@ -87,11 +87,9 @@ background-size: cover;
 
 .carousel-side-text {
   font-family: 'Alfa Slab One', cursive;
-  border: auto;
-  align-content: center;
   text-align: center;
   color: whitesmoke;
-  font-size: 130%;
+  font-size: 110%;
 }
 
 .products-carousel-div{
@@ -120,11 +118,34 @@ background-size: cover;
   right: -7%;
 }
 
-.vs-img {
+.vs-img-div {
+  font-size:0;
+}
+
+.vs-text-div {
+  position: relative;
+}
+
+.lyrics-div {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.lyrics-text {
+  color: whitesmoke;
+  font-size: 200%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cover-top {
   width: 100%;
-  padding-left: -50;
-  border-left: -50;
-  margin-left: -50;
+  z-index: -999;
+}
+
+.cover-bottom {
+  width: 100%;
+  z-index: -999;
 }
 
 .tournament-div {
