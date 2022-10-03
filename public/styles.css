@@ -10,9 +10,15 @@ font-family: 'Keania One', cursive;
 
 body {
 background-image: url('https://i.imgur.com/fcDFEEC.jpg');
+min-height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
 background-size: cover;
-overflow-x: hidden;
 }
+
 
 .hero-text-div {
   position: relative;
