@@ -5,6 +5,7 @@ import ProductsCarousel from "./ProductsCarousel";
 import Tournament from "./Tournament";
 import AccordionTips from "./AccordionTips";
 import Footer from "./Footer";
+import CharacterSelect from "./CharacterSelect";
 
 import VSScreen from "./VSScreen";
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <WhoWeAre />
       <ProductsCarousel />
       <VSScreen />
+      <CharacterSelect />
       <Tournament />
       <AccordionTips />
       <Footer />

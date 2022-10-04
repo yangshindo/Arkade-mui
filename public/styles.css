@@ -136,18 +136,31 @@ background-size: cover;
   color: whitesmoke;
   font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 20;
 }
+
 
 .cover-top {
   width: 100%;
-  z-index: -999;
+  z-index: -2;
 }
 
 .cover-bottom {
   width: 100%;
-  z-index: -999;
+  z-index: -2;
 }
 
+.character-select-div {
+  padding: 10%
+}
+
+.character-select-img{
+  border: solid;
+  border-width: 3px;
+  border-color: #ac0e0e;
+  border-radius: 3px;
+  border-width: 4px;
+}
 .tournament-div {
   padding-left: 5%;
   padding-right: 5%;
