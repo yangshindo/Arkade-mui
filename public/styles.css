@@ -1,7 +1,6 @@
 /*
 FONTS
 font-family: 'Alfa Slab One', cursive;
-font-family: 'Alumni Sans Collegiate One', sans-serif;
 font-family: 'Bebas Neue', cursive;
 font-family: 'Diplomata SC', cursive;
 font-family: 'Emblema One', cursive;
@@ -151,16 +150,28 @@ background-size: cover;
 }
 
 .character-select-div {
-  padding: 10%
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .character-select-img{
-  border: solid;
-  border-width: 3px;
-  border-color: #ac0e0e;
-  border-radius: 3px;
-  border-width: 4px;
+  opacity: 0.85
 }
+
+.music-select-h1 {
+  text-align: center;
+  font-family: 'Diplomata SC', cursive;
+  font-size: 450%;
+  text-shadow: 2px 2px #a00909;
+}
+
+.music-select-p {
+text-align: center;
+font-family: 'Alfa Slab One', cursive;
+font-size: 180%;
+text-shadow: 2px 2px #dbdbdb;
+}
+
 .tournament-div {
   padding-left: 5%;
   padding-right: 5%;
@@ -208,14 +219,14 @@ background-size: cover;
   position: absolute;
   bottom: 0%;
   right: 5%;
-  width: 8%;
+  width: 12%;
   overflow: hidden;
 }
 
 .speechbubble-img {
   position: absolute;
-  bottom: 10%;
-  right: 12%;
-  width: 17%;
+  bottom: 12%;
+  right: 14%;
+  width: 22%;
   overflow: hidden;
 }

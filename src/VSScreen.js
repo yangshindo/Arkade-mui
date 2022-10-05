@@ -20,14 +20,8 @@ function VSScreen() {
 
           <br />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+
+
         
       </div>
     </VisibilitySensor>

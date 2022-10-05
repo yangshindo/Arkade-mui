@@ -6,8 +6,9 @@ import Tournament from "./Tournament";
 import AccordionTips from "./AccordionTips";
 import Footer from "./Footer";
 import CharacterSelect from "./CharacterSelect";
-
 import VSScreen from "./VSScreen";
+import MusicPlayer from "./MusicPlayer";
+
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
       <Tournament />
       <AccordionTips />
       <Footer />
+      <MusicPlayer />
     </div>
   );
 }

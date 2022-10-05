@@ -9,6 +9,8 @@ function AccordionTips() {
 
     <div className="accordion-div">
           <br />
+          <br />
+          <br />
     <br />
     <br />
       <Accordion>

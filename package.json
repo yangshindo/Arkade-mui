@@ -13,7 +13,6 @@
     "framer-motion": "^4.1.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-jinke-music-player": "^4.24.2",
     "react-material-ui-carousel": "^3.4.2",
     "react-scripts": "^5.0.1",
     "react-visibility-sensor": "^5.1.1",
