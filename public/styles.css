@@ -172,6 +172,21 @@ font-size: 180%;
 text-shadow: 2px 2px #dbdbdb;
 }
 
+.music-select-background {
+    background: linear-gradient(90deg, #a2a1a1 0%,#a24343 30%,#800f0f 67%, #adabab 100%);
+    background-size: 1000%;
+    animation: background 20s linear alternate infinite;
+}
+
+@keyframes background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
 .tournament-div {
   padding-left: 5%;
   padding-right: 5%;
