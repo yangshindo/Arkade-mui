@@ -24,14 +24,14 @@ function MusicPlayer() {
 
 
   return (
-
+<Slide direction="up" in={isPlayerOpen} timeout={2000} >
 <Paper
   sx={{
     position: "fixed",
     bottom: 0,
     left: 0,
     right: 0,
-    opacity: isPlayerOpen ? 0.75 : 0.1,
+    opacity: 0.8,
     "&:hover": {
       opacity: 1,
     },
@@ -50,10 +50,10 @@ function MusicPlayer() {
     <p>
     &nbsp;
     &nbsp;&nbsp;</p>
-    <IconButton onClick={setIsPlayerOpen(false)}><CloseIcon /></IconButton>
+    <IconButton onClick={() => setIsPlayerOpen(false)}><CloseIcon /></IconButton>
   </BottomNavigation>
 </Paper>
-
+</Slide>
   
   );
 }

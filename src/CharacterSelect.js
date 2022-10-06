@@ -4,9 +4,12 @@ import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { MusicPlayerContext } from "./Contexts/MusicPlayerContext";
+import VisibilitySensor from "react-visibility-sensor";
 
 function CharacterSelect() {
   const { setSongName, isPlayerOpen, setIsPlayerOpen } = useContext(MusicPlayerContext);
+
+
 
   function chaosClick(e) {
     e.stopPropagation()
@@ -15,6 +18,7 @@ function CharacterSelect() {
     console.log(isPlayerOpen)
   }
   function chippClick(e) {
+    e.stopPropagation()
     setIsPlayerOpen(true)
     setSongName("Play The Hero - Chipp Zanuff Theme")
     console.log(isPlayerOpen)
@@ -24,6 +28,7 @@ function CharacterSelect() {
     setIsPlayerOpen(true)
     setSongName("Perfection Can't Please Me - Jack-O' Theme")
     console.log(isPlayerOpen)
+    
   }
 
   return (
@@ -35,6 +40,7 @@ function CharacterSelect() {
       <br />
       <br />
       <motion.div>
+      <VisibilitySensor>
         <Box
           className="music-select-background"
           sx={{
@@ -95,6 +101,7 @@ function CharacterSelect() {
             </Grid>
           </Grid>
         </Box>
+        </VisibilitySensor>
       </motion.div>
       <br />
       <br />
