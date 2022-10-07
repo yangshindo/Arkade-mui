@@ -1,21 +1,13 @@
-/*
-FONTS
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Diplomata SC', cursive;
-font-family: 'Emblema One', cursive;
-font-family: 'Keania One', cursive;
-*/
-
 body {
 background-image: url('https://i.imgur.com/fcDFEEC.jpg');
 min-height: 500px;
 
-/* Create the parallax scrolling effect */
+/* Parallax Scrolling Effect */
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+overflow-x: hidden;
 }
 
 
@@ -30,7 +22,7 @@ background-size: cover;
   text-align: left;
   padding-left: 15%;
   color: whitesmoke;
-  overflow:hidden
+  overflow:hidden;
 }
 
 .hero-h1-2 {
@@ -39,7 +31,7 @@ background-size: cover;
     text-align: right;
     padding-right: 15%;
     color: whitesmoke;
-    overflow:hidden
+    overflow:hidden;
 }
 
 .expand-more-icon {
@@ -74,6 +66,9 @@ background-size: cover;
 
 .carousel-round-img {
   width: 100%;
+  padding: 0px;
+  border: 0px;
+  margin: 0px
 }
 
 .carousel-title-text {
@@ -175,16 +170,6 @@ text-shadow: 2px 2px #dbdbdb;
 .music-select-background {
     background: linear-gradient(90deg, #a2a1a1 0%,#a24343 30%,#800f0f 67%, #adabab 100%);
     background-size: 1000%;
-    animation: background 20s linear alternate infinite;
-}
-
-@keyframes background {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
 }
 
 .tournament-div {
@@ -211,6 +196,7 @@ text-shadow: 2px 2px #dbdbdb;
 .tournament-h2 {
   font-size: 300%;
   font-family: 'Bebas Neue', cursive;
+  text-align: center;
 }
 
 .accordion-div {
@@ -224,7 +210,7 @@ text-shadow: 2px 2px #dbdbdb;
 }
 
 .footer-text{
-  font-size: 130%;
+  font-size: 90%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke
@@ -244,4 +230,103 @@ text-shadow: 2px 2px #dbdbdb;
   right: 14%;
   width: 22%;
   overflow: hidden;
+}
+
+/* MOBILE RULES - useMediaQuery Hook*/
+
+.hero-h1-1-mobile {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 400%;
+  text-align: left;
+  color: whitesmoke;
+  overflow:hidden;
+}
+
+.hero-h1-2-mobile {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 400%;
+  text-align: right;
+  color: whitesmoke;
+  overflow:hidden;
+}
+
+.hero-letsrock-mobile {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  width: 50%;
+  transform: rotate(20deg);
+  z-index: -999;
+  overflow:hidden
+}
+
+.hero-slash-mobile {
+  position: absolute;
+  top: 25%;
+  width: 50%;
+  transform: rotate(-20deg);
+  z-index: -999;
+  overflow:hidden
+}
+
+.carousel-title-text-mobile {
+    font-family: 'Keania One', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: #ac0e0e;
+    border: dashed;
+}
+
+.ino-img-mobile {
+  width: 80%;
+  position: absolute;
+  top: 8%;
+  right: -33%;
+  overflow-x: hidden;
+}
+
+.lyrics-div-mobile {
+  position: absolute;
+  top: 10%;
+  left: 0.5%
+}
+
+.lyrics-text-mobile {
+  color: whitesmoke;
+  font-size: 65%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 20;
+}
+
+.character-select-div-mobile {
+  padding-left: 3%;
+  padding-right: 3%
+}
+
+.music-select-h1-mobile {
+  text-align: center;
+  font-family: 'Diplomata SC', cursive;
+  font-size: 220%;
+  text-shadow: 2px 2px #a00909;
+}
+
+.music-select-p-mobile {
+text-align: center;
+font-family: 'Alfa Slab One', cursive;
+font-size: 120%;
+text-shadow: 2px 2px #dbdbdb;
+
+}
+
+.character-select-img-mobile{
+  width: 90%;
+  opacity: 0.85
+}
+
+.tournament-img-mobile {
+  margin-top: 0%;
+  width: 95%;
+  height: 1000%;
+  border: ridge;
+  box-shadow: 5px 10px #0c0c0c;
 }

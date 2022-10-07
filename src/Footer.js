@@ -1,13 +1,17 @@
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import { Slide, Fade } from "@mui/material";
+import useMediaQuery from "./Hooks/useMediaQuery";
 
 function Footer() {
   const [visibility, setVisibility] = useState(false);
 
+  const isDesktop = useMediaQuery("(min-width: 769px)");
+
   function visibilityChange(isVisible) {
     if (isVisible) {
-      setVisibility(true);
+      if (isDesktop) {
+      setVisibility(true)};
     }
   }
 
@@ -17,25 +21,9 @@ function Footer() {
       <div className="footer-div">
         <br />
         <br />
-        {visibility ? (
-          <div>
-            <Fade in={true} timeout={4300}>
-              <img
-                alt="speechbubble-img"
-                className="speechbubble-img"
-                src="https://i.imgur.com/YQVkr6W.png"
-              />
-            </Fade>
-            <Slide direction="left" in={visibility} timeout={500}>
-              <img
-                alt="chibimay-img"
-                className="chibimay-img"
-                src="https://i.imgur.com/EysIyUj.png"
-              />
-            </Slide>
-          </div>
-        ) : null}
-
+        {visibility ?
+          <MayAnimation />
+         : null}
         <p className="footer-text">
           Privacy Policy &nbsp; / &nbsp; Terms of Use &nbsp; / &nbsp; Data
           Disclaimer
@@ -46,6 +34,31 @@ function Footer() {
       </VisibilitySensor>
     </div>
   );
+}
+
+function MayAnimation() {
+
+  const isDesktop = useMediaQuery("(min-width: 769px)");
+
+  return (
+<div>
+            <Fade in={true} timeout={4300}>
+              <img
+                alt="speechbubble-img"
+                className="speechbubble-img"
+                src="https://i.imgur.com/YQVkr6W.png"
+              />
+            </Fade>
+            <Slide direction="left" in={true} timeout={500}>
+              <img
+                alt="chibimay-img"
+                className="chibimay-img"
+                src="https://i.imgur.com/EysIyUj.png"
+              />
+            </Slide>
+            
+          </div>
+  )
 }
 
 export default Footer;

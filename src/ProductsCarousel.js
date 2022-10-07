@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button, Slide } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import VisibilitySensor from 'react-visibility-sensor';
-
+import VisibilitySensor from "react-visibility-sensor";
+import useMediaQuery from "./Hooks/useMediaQuery";
 
 function ProductsCarousel(props) {
+  const isDesktop = useMediaQuery("(min-width: 769px)");
 
-   const [visibility, setVisibility] = useState(false)
+  const [visibility, setVisibility] = useState(false);
 
-   function visibilityChange(isVisible) {
+  function visibilityChange(isVisible) {
     if (isVisible) {
-        setVisibility(true)
+      setVisibility(true);
     }
-   }
-
+  }
 
   const items = [
     {
@@ -27,41 +27,43 @@ function ProductsCarousel(props) {
     },
     {
       image: "https://i.imgur.com/iHs7A9n.png",
-      description: "HITBOX",
+      description: "HITBOX Standard",
     },
     {
       image: "https://i.imgur.com/QNg91O9.png",
-      description: "Adaptable Lever Model 29B",
+      description: "Adaptable Lever 29B",
     },
   ];
 
   return (
-    
     <div>
-       
       <div className="products-carousel-div">
-      
         <Paper sx={{ backgroundColor: "whitesmoke" }}>
-            <VisibilitySensor onChange={visibilityChange} partialVisibility={(true)}>
-          <Carousel>
-            {items.map((item, i) => (
-              <Item key={i} item={item} />
-            ))}
-          </Carousel>
-          </VisibilitySensor >
+          <VisibilitySensor
+            onChange={visibilityChange}
+            partialVisibility={true}
+          >
+            <Carousel>
+              {items.map((item, i) => (
+                <Item key={i} item={item} />
+              ))}
+            </Carousel>
+          </VisibilitySensor>
           <br />
         </Paper>{" "}
-        {visibility ? <div><Slide direction="left" in={true} timeout={3650}>
-          <img
-            src="https://i.imgur.com/5370P4I.png"
-            alt="ino"
-            className="ino-img"
-          />
-        </Slide></div>  : null}
+        {visibility ? (
+          <div>
+            <Slide direction="left" in={true} timeout={3650}>
+              <img
+                src="https://i.imgur.com/5370P4I.png"
+                alt="ino"
+                className={isDesktop ? "ino-img" : "ino-img-mobile"}
+              />
+            </Slide>
+          </div>
+        ) : null}
       </div>
-      
     </div>
-    
   );
 }
 
