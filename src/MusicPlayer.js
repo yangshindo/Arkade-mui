@@ -31,7 +31,7 @@ function MusicPlayer() {
     bottom: 0,
     left: 0,
     right: 0,
-    opacity: 0.8,
+    opacity: 0.5,
     "&:hover": {
       opacity: 1,
     },

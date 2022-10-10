@@ -49,9 +49,9 @@ function TournamentRender() {
           }}
         >
           <Grid container spacing={3}>
-            <Grid item xs={isDesktop ? 5 : 12}>
+            <Grid item xs={isDesktop ? 6 : 12}>
               <h2 className="tournament-h2">2022 WORLD TOURNAMENT</h2>
-              <p className="tournament-text">
+              <p className="tournament-text" style={{textAlign: "center"}}>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -66,6 +66,8 @@ function TournamentRender() {
                 src="https://i.imgur.com/dJcTjPj.png"
                 alt="tournament-img"
                 className={isDesktop ? "tournament-img" : "tournament-img-mobile"}
+                style={{display: "block",
+                  margin: "0 auto"}}
               />
             </Grid>
           </Grid>

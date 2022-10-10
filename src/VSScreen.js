@@ -18,7 +18,6 @@ function VSScreen() {
         <p>&nbsp;</p>
         {visibility ? <VSRender /> : null}
         {visibility ? <LyricsRender /> : null}
-
         <br />
         <br />
       </div>
@@ -27,22 +26,31 @@ function VSScreen() {
 }
 
 function VSRender() {
+  const isDesktop = useMediaQuery("(min-width: 769px)");
+
   return (
     <div className="vs-img-div">
       <Slide direction="right" in={true} timeout={1500}>
         <img
-          src="https://i.imgur.com/pMOzx4L.png"
+          src={
+            isDesktop
+              ? "https://i.imgur.com/pMOzx4L.png"
+              : "https://i.imgur.com/3tskh6p.png"
+          }
           alt="cover-top"
           className="cover-top"
         />
       </Slide>
-      <Slide direction="left" in={true} timeout={1500}>
-        <img
-          src="https://imgur.com/SBogBZv.png"
-          alt="cover-bottom"
-          className="cover-bottom"
-        />
-      </Slide>
+      {isDesktop ? (
+        <Slide direction="left" in={true} timeout={1500}>
+          <img
+            src="https://imgur.com/SBogBZv.png"
+            alt="cover-bottom"
+            className="cover-bottom"
+          />
+        </Slide>
+      ) : null}
+
       <LyricsRender />
     </div>
   );

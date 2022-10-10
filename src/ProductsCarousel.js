@@ -31,7 +31,7 @@ function ProductsCarousel(props) {
     },
     {
       image: "https://i.imgur.com/QNg91O9.png",
-      description: "Adaptable Lever 29B",
+      description: "Adaptable 29B",
     },
   ];
 

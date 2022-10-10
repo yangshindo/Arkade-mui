@@ -93,11 +93,12 @@ overflow-x: hidden;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 8%;
-  overflow:hidden
+
 }
 
 .product-img {
   width: 60%;
+  z-index: 999;
 }
 
 .product-text {
@@ -108,8 +109,9 @@ overflow-x: hidden;
 .ino-img {
   width: 50%;
   position: absolute;
-  top: 3%;
+  top: 10%;
   right: -7%;
+  overflow-x: hidden;
 }
 
 .vs-img-div {
@@ -158,6 +160,9 @@ overflow-x: hidden;
   font-family: 'Diplomata SC', cursive;
   font-size: 450%;
   text-shadow: 2px 2px #a00909;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .music-select-p {
@@ -165,6 +170,7 @@ text-align: center;
 font-family: 'Alfa Slab One', cursive;
 font-size: 180%;
 text-shadow: 2px 2px #dbdbdb;
+line-height: 1rem;
 }
 
 .music-select-background {
@@ -234,6 +240,8 @@ text-shadow: 2px 2px #dbdbdb;
 
 /* MOBILE RULES - useMediaQuery Hook*/
 
+
+
 .hero-h1-1-mobile {
   font-family: 'Bebas Neue', cursive;
   font-size: 400%;
@@ -285,6 +293,12 @@ text-shadow: 2px 2px #dbdbdb;
   overflow-x: hidden;
 }
 
+.cover-mobile {
+  width: 30%;
+  height: 40%;
+  overflow-x: hidden;
+}
+
 .lyrics-div-mobile {
   position: absolute;
   top: 10%;
@@ -293,8 +307,9 @@ text-shadow: 2px 2px #dbdbdb;
 
 .lyrics-text-mobile {
   color: whitesmoke;
-  font-size: 65%;
+  font-size: 160%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 1px 1px black;
   z-index: 20;
 }
 
@@ -308,6 +323,9 @@ text-shadow: 2px 2px #dbdbdb;
   font-family: 'Diplomata SC', cursive;
   font-size: 220%;
   text-shadow: 2px 2px #a00909;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .music-select-p-mobile {
@@ -315,18 +333,21 @@ text-align: center;
 font-family: 'Alfa Slab One', cursive;
 font-size: 120%;
 text-shadow: 2px 2px #dbdbdb;
+line-height: 1rem;
 
 }
 
 .character-select-img-mobile{
   width: 90%;
   opacity: 0.85
+  
 }
 
 .tournament-img-mobile {
-  margin-top: 0%;
-  width: 95%;
-  height: 1000%;
+  margin-top: 0 auto;
+  width: 90%;
   border: ridge;
   box-shadow: 5px 10px #0c0c0c;
+  display: "block";
 }
+

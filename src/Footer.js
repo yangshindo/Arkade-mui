@@ -1,9 +1,11 @@
 import VisibilitySensor from "react-visibility-sensor";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Slide, Fade } from "@mui/material";
 import useMediaQuery from "./Hooks/useMediaQuery";
+import { MusicPlayerContext } from "./Contexts/MusicPlayerContext";
 
 function Footer() {
+
   const [visibility, setVisibility] = useState(false);
 
   const isDesktop = useMediaQuery("(min-width: 769px)");
@@ -30,6 +32,7 @@ function Footer() {
         </p>
 
         <p className="footer-text">João Mário - 2022</p>
+        <div> <br /></div>
       </div>
       </VisibilitySensor>
     </div>
@@ -38,7 +41,8 @@ function Footer() {
 
 function MayAnimation() {
 
-  const isDesktop = useMediaQuery("(min-width: 769px)");
+  const isPlayerOpen = useContext(MusicPlayerContext);
+
 
   return (
 <div>

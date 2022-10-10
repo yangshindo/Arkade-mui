@@ -70,8 +70,16 @@ function CharacterSelect() {
           <p className={isDesktop ? "music-select-p" : "music-select-p-mobile"}>
             Click one of the character portraits to select a song!
           </p>
+
           </Grid>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           </Grid>
+          
           <Grid container sx={{ textAlign: "center" }} spacing={4}>
             <Grid item xs={isDesktop ? 4 : 12}>
               <motion.img
@@ -108,6 +116,8 @@ function CharacterSelect() {
                 src="https://i.imgur.com/5pNMKgi.jpg"
                 onClick={jackoClick}
               />
+                        <br />
+
             </Grid>
           </Grid>
           </Container>
