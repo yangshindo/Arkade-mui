@@ -41,9 +41,9 @@ function TournamentRender() {
             border: "solid",
             borderRadius: "8%",
             padding: "5%",
-            backgroundColor: "#950101",
+            backgroundSize: "cover",
+            backgroundImage: "url(https://imgur.com/6qhonqP.png)" ,
             "&:hover": {
-              backgroundColor: "#950101",
               opacity: [0.9, 0.8, 0.7],
             },
           }}
@@ -51,7 +51,7 @@ function TournamentRender() {
           <Grid container spacing={3}>
             <Grid item xs={isDesktop ? 6 : 12}>
               <h2 className="tournament-h2">2022 WORLD TOURNAMENT</h2>
-              <p className="tournament-text" style={{textAlign: "center"}}>
+              <p className="tournament-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -65,9 +65,7 @@ function TournamentRender() {
               <img
                 src="https://i.imgur.com/dJcTjPj.png"
                 alt="tournament-img"
-                className={isDesktop ? "tournament-img" : "tournament-img-mobile"}
-                style={{display: "block",
-                  margin: "0 auto"}}
+                className="tournament-img"
               />
             </Grid>
           </Grid>

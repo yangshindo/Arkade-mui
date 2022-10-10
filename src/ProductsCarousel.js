@@ -31,7 +31,7 @@ function ProductsCarousel(props) {
     },
     {
       image: "https://i.imgur.com/QNg91O9.png",
-      description: "Adaptable 29B",
+      description: "Adaptable ST 29B",
     },
   ];
 
@@ -57,7 +57,7 @@ function ProductsCarousel(props) {
               <img
                 src="https://i.imgur.com/5370P4I.png"
                 alt="ino"
-                className={isDesktop ? "ino-img" : "ino-img-mobile"}
+                className="ino-img"
               />
             </Slide>
           </div>

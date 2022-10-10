@@ -21,7 +21,7 @@ function WhoWeAre() {
       <br />
       <br />
       <br />
-      <Grid container spacing={isDesktop ? 2 : 0}>
+      <Grid container spacing={isDesktop ? 0 : 0}>
         <VisibilitySensor onChange={visibilityChange}>
           <Grid item xs={isDesktop ? 7 : 12}>
             <Carousel
@@ -45,21 +45,14 @@ function WhoWeAre() {
         <Grid item xs={isDesktop ? 5 : 12}>
           <br />
           <br />
+
           {visibility ? (
             <motion.div
               animate={{ scale: 1 }}
               initial={{ scale: 2 }}
               transition={{ type: "tween", duration: 0.4 }}
             >
-              <p
-                className={
-                  isDesktop
-                    ? "carousel-title-text"
-                    : "carousel-title-text-mobile"
-                }
-              >
-                THE BEST FIGHT EVER!
-              </p>
+              <p className="carousel-title-text">THE BEST FIGHT EVER!</p>
             </motion.div>
           ) : (
             <div>

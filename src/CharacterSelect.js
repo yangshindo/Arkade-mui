@@ -34,7 +34,7 @@ function CharacterSelect() {
   }
 
   return (
-    <div className={isDesktop ? "character-select-div" : "character-select-div-mobile"}>
+    <div className="character-select-div">
       <br />
       <br />
       <br />
@@ -60,14 +60,14 @@ function CharacterSelect() {
            <Container>
           <Grid container sx={{ textAlign: "center" }} spacing={1}>
           <Grid item xs={12}>
-          <h1 className={isDesktop ? "music-select-h1" : "music-select-h1-mobile"}>
-            {" "}
-            <span style={{ color: "#ebebeb" }}>M</span>USIC{" "}
+          <h1 className="music-select-h1">
+            <span style={{ color: "#ebebeb" }}>M</span>USIC
+            <br />
             <span style={{ color: "#ebebeb" }}>S</span>ELECT
           </h1>
           </Grid>
           <Grid item xs={12}>
-          <p className={isDesktop ? "music-select-p" : "music-select-p-mobile"}>
+          <p className="music-select-p">
             Click one of the character portraits to select a song!
           </p>
 
@@ -88,7 +88,7 @@ function CharacterSelect() {
                   transition: { duration: 0.2 },
                   opacity: 1,
                 }}
-                className={isDesktop ? "character-select-img" : "character-select-img-mobile"}
+                className="character-select-img"
                 src="https://i.imgur.com/C5kOjRF.jpg"
                 onClick={chaosClick}
               />
@@ -100,7 +100,7 @@ function CharacterSelect() {
                   transition: { duration: 0.2 },
                   opacity: 1,
                 }}
-                className={isDesktop ? "character-select-img" : "character-select-img-mobile"}
+                className="character-select-img"
                 src="https://i.imgur.com/JGCsn2Q.jpg"
                 onClick={chippClick}
               />
@@ -112,7 +112,7 @@ function CharacterSelect() {
                   transition: { duration: 0.2 },
                   opacity: 1,
                 }}
-                className={isDesktop ? "character-select-img" : "character-select-img-mobile"}
+                className="character-select-img"
                 src="https://i.imgur.com/5pNMKgi.jpg"
                 onClick={jackoClick}
               />

@@ -18,7 +18,7 @@ overflow-x: hidden;
 
 .hero-h1-1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1100%;
+  font-size: 1200%;
   text-align: left;
   padding-left: 15%;
   color: whitesmoke;
@@ -27,7 +27,7 @@ overflow-x: hidden;
 
 .hero-h1-2 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1100%;
+  font-size: 1200%;
     text-align: right;
     padding-right: 15%;
     color: whitesmoke;
@@ -65,7 +65,7 @@ overflow-x: hidden;
 }
 
 .carousel-round-img {
-  width: 100%;
+  width: 90%;
   padding: 0px;
   border: 0px;
   margin: 0px
@@ -83,7 +83,7 @@ overflow-x: hidden;
   font-family: 'Alfa Slab One', cursive;
   text-align: center;
   color: whitesmoke;
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .products-carousel-div{
@@ -126,11 +126,12 @@ overflow-x: hidden;
   position: absolute;
   top: 3%;
   left: 3%;
+  line-height: 0;
 }
 
 .lyrics-text {
   color: whitesmoke;
-  font-size: 200%;
+  font-size: 240%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   z-index: 20;
 }
@@ -139,12 +140,17 @@ overflow-x: hidden;
 .cover-top {
   width: 100%;
   z-index: -2;
-}
+  padding: 0;
+  margin: 0;
+border: 0}
 
 .cover-bottom {
   width: 100%;
   z-index: -2;
-}
+  padding: 0;
+  margin: 0;
+border: 0}
+
 
 .character-select-div {
   padding-left: 10%;
@@ -174,7 +180,7 @@ line-height: 1rem;
 }
 
 .music-select-background {
-    background: linear-gradient(90deg, #a2a1a1 0%,#a24343 30%,#800f0f 67%, #adabab 100%);
+    background: linear-gradient(90deg, #d2d1d1 0%,#a24343 30%,#800f0f 67%, #d2d0d0 100%);
     background-size: 1000%;
 }
 
@@ -185,24 +191,26 @@ line-height: 1rem;
 }
 
 .tournament-img {
-  margin-top: 5%;
   width: 105%;
   border: ridge;
   box-shadow: 5px 10px #0c0c0c;
+  image-rendering: pixelated;
 }
 
 .tournament-text {
-  text-shadow: 3px 3px #040404;
-  color: whitesmoke;
-  font-size: 130%;
+  text-shadow: 4px 4px #040404;
+  color: rgb(242, 242, 242);
+  font-size: 1.7rem;
   font-family: 'Alfa Slab One';
   margin-top: -5%;
 }
 
 .tournament-h2 {
-  font-size: 300%;
+  margin-top: -1%;
+  font-size: 360%;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
+  text-shadow: 2px 2px #dbdbdb;
 }
 
 .accordion-div {
@@ -240,114 +248,123 @@ line-height: 1rem;
 
 /* MOBILE RULES - useMediaQuery Hook*/
 
-
-
-.hero-h1-1-mobile {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 400%;
-  text-align: left;
-  color: whitesmoke;
-  overflow:hidden;
-}
-
-.hero-h1-2-mobile {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 400%;
-  text-align: right;
-  color: whitesmoke;
-  overflow:hidden;
-}
-
-.hero-letsrock-mobile {
-  position: absolute;
-  top: 8%;
-  right: 5%;
-  width: 50%;
-  transform: rotate(20deg);
-  z-index: -999;
-  overflow:hidden
-}
-
-.hero-slash-mobile {
-  position: absolute;
-  top: 25%;
-  width: 50%;
-  transform: rotate(-20deg);
-  z-index: -999;
-  overflow:hidden
-}
-
-.carousel-title-text-mobile {
-    font-family: 'Keania One', cursive;
-    font-size: 200%;
-    text-align: center;
-    color: #ac0e0e;
-    border: dashed;
-}
-
-.ino-img-mobile {
-  width: 80%;
-  position: absolute;
-  top: 8%;
-  right: -33%;
-  overflow-x: hidden;
-}
-
-.cover-mobile {
-  width: 30%;
-  height: 40%;
-  overflow-x: hidden;
-}
-
-.lyrics-div-mobile {
-  position: absolute;
-  top: 10%;
-  left: 0.5%
-}
-
-.lyrics-text-mobile {
-  color: whitesmoke;
-  font-size: 160%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-shadow: 1px 1px black;
-  z-index: 20;
-}
-
-.character-select-div-mobile {
-  padding-left: 3%;
-  padding-right: 3%
-}
-
-.music-select-h1-mobile {
-  text-align: center;
-  font-family: 'Diplomata SC', cursive;
-  font-size: 220%;
-  text-shadow: 2px 2px #a00909;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.music-select-p-mobile {
-text-align: center;
-font-family: 'Alfa Slab One', cursive;
-font-size: 120%;
-text-shadow: 2px 2px #dbdbdb;
-line-height: 1rem;
-
-}
-
-.character-select-img-mobile{
-  width: 90%;
-  opacity: 0.85
+@media (max-width: 600px) {
+  .hero-h1-1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 400%;
+    text-align: left;
+    color: whitesmoke;
+    overflow:hidden;
+  }
   
-}
+  .hero-h1-2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 400%;
+    text-align: right;
+    color: whitesmoke;
+    overflow:hidden;
+  }
+  
+  .hero-letsrock {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    width: 50%;
+    transform: rotate(20deg);
+    z-index: -999;
+    overflow:hidden
+  }
+  
+  .hero-slash {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    transform: rotate(-20deg);
+    z-index: -999;
+    overflow:hidden
+  }
+  
+  .carousel-title-text {
+      font-family: 'Keania One', cursive;
+      font-size: 200%;
+      text-align: center;
+      color: #ac0e0e;
+      border: dashed;
+  }
 
-.tournament-img-mobile {
-  margin-top: 0 auto;
-  width: 90%;
-  border: ridge;
-  box-shadow: 5px 10px #0c0c0c;
-  display: "block";
+  .products-carousel-div{
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 18%;
+  
+  }
+  
+  .ino-img {
+    width: 110%;
+    position: absolute;
+    top: 8%;
+    right: -57%;
+    overflow-x: hidden;
+  }
+  
+  .cover {
+    position: relative ;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 40%;
+  }
+  
+  .lyrics-div {
+    position: absolute;
+    top: 10%;
+    left: 0.5%
+  }
+  
+  .lyrics-text {
+    color: whitesmoke;
+    font-size: 150%;
+    line-height: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px black;
+    z-index: 20;
+  }
+  
+  
+  .music-select-h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 200%;
+    text-shadow: 2px 2px #a00909;
+  }
+  
+  .music-select-p {
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 120%;
+  text-shadow: 2px 2px #dbdbdb;
+  line-height: 1rem;
+  
+  }
+  
+  .character-select-img{
+    width: 90%;
+    opacity: 0.85
+    
+  }
+  
+  .tournament-img {
+    width: 90%;
+    margin-left: 3%;
+  }
+
+  .tournament-text {
+    text-align: center;
+    font-size: 100%;
+  }
+  
+  
+  
 }
 

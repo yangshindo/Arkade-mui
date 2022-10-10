@@ -32,7 +32,6 @@ function Footer() {
         </p>
 
         <p className="footer-text">João Mário - 2022</p>
-        <div> <br /></div>
       </div>
       </VisibilitySensor>
     </div>

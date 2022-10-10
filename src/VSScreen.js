@@ -30,19 +30,19 @@ function VSRender() {
 
   return (
     <div className="vs-img-div">
-      <Slide direction="right" in={true} timeout={1500}>
+      <Slide direction="right" in={true} timeout={1800}>
         <img
           src={
             isDesktop
               ? "https://i.imgur.com/pMOzx4L.png"
-              : "https://i.imgur.com/3tskh6p.png"
+              : "https://imgur.com/mGoQlsQ.png"
           }
           alt="cover-top"
-          className="cover-top"
+          className={isDesktop ? "cover-top" : "cover"}
         />
       </Slide>
       {isDesktop ? (
-        <Slide direction="left" in={true} timeout={1500}>
+        <Slide direction="left" in={true} timeout={1800}>
           <img
             src="https://imgur.com/SBogBZv.png"
             alt="cover-bottom"
@@ -60,24 +60,24 @@ function LyricsRender() {
   const isDesktop = useMediaQuery("(min-width: 769px)");
 
   return (
-    <div className={isDesktop ? "lyrics-div" : "lyrics-div-mobile"}>
+    <div className="lyrics-div">
       <Fade in={true} timeout={2800} style={{ transitionDelay: "800ms" }}>
-        <p className={isDesktop ? "lyrics-text" : "lyrics-text-mobile"}>
+        <p className="lyrics-text">
           If the words made you
         </p>
       </Fade>
-      <Fade in={true} timeout={2800} style={{ transitionDelay: "1400ms" }}>
-        <p className={isDesktop ? "lyrics-text" : "lyrics-text-mobile"}>
+      <Fade in={true} timeout={2800} style={{ transitionDelay: "1500ms" }}>
+        <p className="lyrics-text">
           I dont need a new world order
         </p>
       </Fade>
-      <Fade in={true} timeout={2800} style={{ transitionDelay: "2000ms" }}>
-        <p className={isDesktop ? "lyrics-text" : "lyrics-text-mobile"}>
+      <Fade in={true} timeout={2800} style={{ transitionDelay: "2100ms" }}>
+        <p className="lyrics-text">
           You soon you will know
         </p>
       </Fade>
-      <Fade in={true} timeout={2800} style={{ transitionDelay: "2600ms" }}>
-        <p className={isDesktop ? "lyrics-text" : "lyrics-text-mobile"}>
+      <Fade in={true} timeout={2800} style={{ transitionDelay: "2700ms" }}>
+        <p className="lyrics-text">
           We already know the smell of the game!
         </p>
       </Fade>

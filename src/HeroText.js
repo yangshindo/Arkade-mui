@@ -11,22 +11,22 @@ function HeroText() {
 
     <div className="herotext-div">
       <Slide direction="right" in="true" timeout={2500} >
-        <h1 className={isDesktop ? "hero-h1-1" : "hero-h1-1-mobile"}>MATERIAL UI </h1>
+        <h1 className="hero-h1-1">MATERIAL UI </h1>
       </Slide>
       <Slide direction="left" in="true" timeout={2500}>
-        <h1 className={isDesktop ? "hero-h1-2" : "hero-h1-2-mobile"}>FRAMER MOTION</h1>
+        <h1 className="hero-h1-2">FRAMER MOTION</h1>
       </Slide>
       <div className="hero-img-div">
         <Fade in={true} timeout={2800} style={{transitionDelay: '2500ms'}}>
           <img
-            className={isDesktop ? "hero-letsrock" : "hero-letsrock-mobile" }
+            className="hero-letsrock" 
             src="https://i.imgur.com/xd7SOG7.png"
             alt="hero-letsrock"
           ></img>
         </Fade>
         <Fade in={true} timeout={2800} style={{transitionDelay: '2500ms'}}>
           <img
-            className={isDesktop ? "hero-slash" : "hero-slash-mobile" }
+            className="hero-slash"
             src="https://i.imgur.com/YzATa3o.png"
             alt="hero-slash"
           ></img>
