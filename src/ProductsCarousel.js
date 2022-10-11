@@ -3,10 +3,9 @@ import Carousel from "react-material-ui-carousel";
 import { Paper, Button, Slide } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import VisibilitySensor from "react-visibility-sensor";
-import useMediaQuery from "./Hooks/useMediaQuery";
+
 
 function ProductsCarousel(props) {
-  const isDesktop = useMediaQuery("(min-width: 769px)");
 
   const [visibility, setVisibility] = useState(false);
 
@@ -43,7 +42,7 @@ function ProductsCarousel(props) {
             onChange={visibilityChange}
             partialVisibility={true}
           >
-            <Carousel>
+            <Carousel navButtonsAlwaysInvisible={true}>
               {items.map((item, i) => (
                 <Item key={i} item={item} />
               ))}

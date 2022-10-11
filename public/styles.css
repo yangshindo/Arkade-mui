@@ -200,8 +200,7 @@ line-height: 1rem;
 
 .tournament-text {
   text-shadow: 4px 4px #040404;
-  color: "rgb(242, 242, 242)";
-  font-size: 1.7rem;
+  font-size: 130%;
   font-family: 'Alfa Slab One';
   margin-top: -5%;
   color: whitesmoke;
@@ -216,16 +215,30 @@ line-height: 1rem;
   color: #d11d26;
 }
 
+.chibis-div {
+  text-align: center;
+  justify-items: center;
+  margin-top: 5%;
+}
+
+.chibi-title-text {
+  font-size: 420%;
+  margin-bottom: 5%;
+  font-family: 'Bebas Neue', cursive;
+  color: whitesmoke;
+  text-shadow: 6px 6px #fc0101;
+}
+
 .chibi-potemkin-img {
-  width: 30%;
+  width: 28%;
 }
 
 .chibi-ram-img {
-  width: 30%;
+  width: 28%;
 }
 
 .chibi-jacko-img {
-  width: 30%;
+  width: 28%;
 }
 
 .accordion-div {
