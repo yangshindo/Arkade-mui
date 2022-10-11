@@ -388,6 +388,12 @@ line-height: 1rem;
     margin-left: 3%;
   }
 
+  .tournament-h2 {
+   
+    font-size: 275%;
+
+  }
+
   .tournament-text {
     text-align: center;
     font-size: 100%;
