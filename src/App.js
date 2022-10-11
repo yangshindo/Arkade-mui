@@ -10,9 +10,12 @@ import VSScreen from "./VSScreen";
 import MusicPlayer from "./MusicPlayer";
 import MusicPlayerContextProvider from "./Contexts/MusicPlayerContext";
 import Chibis from "./Chibis";
+import useMediaQuery from "./Hooks/useMediaQuery";
 
 
 function App() {
+
+  const isDesktop = useMediaQuery("(min-width: 769px)");
 
   return (
     <div>
@@ -21,7 +24,7 @@ function App() {
         <HeroText />
         <WhoWeAre />
         <ProductsCarousel />
-        <VSScreen />
+        {isDesktop ? <VSScreen /> : null }
         <CharacterSelect />
         <Tournament />
         <Chibis />

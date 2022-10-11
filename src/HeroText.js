@@ -1,11 +1,10 @@
 import Slide from "@mui/material/Slide";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Fade from "@mui/material/Fade";
-import useMediaQuery from "./Hooks/useMediaQuery";
+
 
 function HeroText() {
 
-  const isDesktop = useMediaQuery('(min-width: 769px)');
 
   return (
 

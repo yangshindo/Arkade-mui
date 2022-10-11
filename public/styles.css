@@ -330,10 +330,10 @@ line-height: 1rem;
   }
   
   .ino-img {
-    width: 110%;
+    width: 100%;
     position: absolute;
     top: 8%;
-    right: -57%;
+    right: -50%;
     overflow-x: hidden;
   }
   
@@ -391,6 +391,22 @@ line-height: 1rem;
   .tournament-text {
     text-align: center;
     font-size: 100%;
+  }
+
+  .chibi-title-text {
+    font-size: 280%;
+  }
+
+  .chibi-potemkin-img {
+    width: 42%;
+  }
+  
+  .chibi-ram-img {
+    width: 42%;
+  }
+  
+  .chibi-jacko-img {
+    width: 42%;
   }
   
   
