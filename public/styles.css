@@ -134,6 +134,7 @@ overflow-x: hidden;
   font-size: 240%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   z-index: 20;
+  line-height: 50%;
 }
 
 
@@ -185,8 +186,8 @@ line-height: 1rem;
 }
 
 .tournament-div {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 5%;
 }
 
@@ -199,18 +200,32 @@ line-height: 1rem;
 
 .tournament-text {
   text-shadow: 4px 4px #040404;
-  color: rgb(242, 242, 242);
+  color: "rgb(242, 242, 242)";
   font-size: 1.7rem;
   font-family: 'Alfa Slab One';
   margin-top: -5%;
+  color: whitesmoke;
 }
 
 .tournament-h2 {
   margin-top: -1%;
-  font-size: 360%;
+  font-size: 375%;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
   text-shadow: 2px 2px #dbdbdb;
+  color: #d11d26;
+}
+
+.chibi-potemkin-img {
+  width: 30%;
+}
+
+.chibi-ram-img {
+  width: 30%;
+}
+
+.chibi-jacko-img {
+  width: 30%;
 }
 
 .accordion-div {
@@ -245,6 +260,7 @@ line-height: 1rem;
   width: 22%;
   overflow: hidden;
 }
+
 
 /* MOBILE RULES - useMediaQuery Hook*/
 

@@ -9,6 +9,7 @@ import CharacterSelect from "./CharacterSelect";
 import VSScreen from "./VSScreen";
 import MusicPlayer from "./MusicPlayer";
 import MusicPlayerContextProvider from "./Contexts/MusicPlayerContext";
+import Chibis from "./Chibis";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <VSScreen />
         <CharacterSelect />
         <Tournament />
+        <Chibis />
         <AccordionTips />
         <Footer />
         <MusicPlayer />
