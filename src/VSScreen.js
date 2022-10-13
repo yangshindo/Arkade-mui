@@ -30,7 +30,7 @@ function VSRender() {
 
   return (
     <div className="vs-img-div">
-      <Slide direction="right" in={true} timeout={1800}>
+      <Slide direction="right" in={true} timeout={3000} style={{ transitionDelay: "1800ms" }}>
         <img
           src={
             isDesktop
@@ -42,7 +42,7 @@ function VSRender() {
         />
       </Slide>
       {isDesktop ? (
-        <Slide direction="left" in={true} timeout={1800}>
+        <Slide direction="left" in={true} timeout={3000} style={{ transitionDelay: "1800ms" }}>
           <img
             src="https://imgur.com/SBogBZv.png"
             alt="cover-bottom"
@@ -83,7 +83,7 @@ function LyricsRender() {
       </Fade>
       <Fade
         in={true}
-        timeout={2800}
+        timeout={3000}
         style={{
           transitionDelay: "2900ms",
           fontSize: "400%",
